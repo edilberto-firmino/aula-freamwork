@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G1 Aula - Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="barra-topo container">
+      <button class="menu-btn" id="menuBtn" aria-label="Abrir menu">☰</button>
+      <a class="logo" href="index.html">g1</a>
+      <span class="editoria">HOME</span>
+      <button class="busca-btn" id="buscaBtn" aria-label="Abrir busca">⌕</button>
+    </div>
+    <nav class="menu container" id="menu">
+      <a class="ativo" href="index.html">Home</a>
+      <a href="economia.html">Economia</a>
+      <a href="politica.html">Política</a>
+    </nav>
+  </header>
+
+  <main class="container conteudo">
+    <section class="destaques-grid">
+      <article class="card destaque-principal">
+        <span class="categoria">Brasil</span>
+        <h1>Projeto em sala recria um portal de notícias usando HTML, CSS e JavaScript</h1>
+        <p>Exercício ajuda estudantes a compreender estrutura, navegação, cards, responsividade e organização de arquivos.</p>
+        <div class="imagem placeholder">DESTAQUE PRINCIPAL</div>
+      </article>
+
+      <div class="coluna-destaques">
+        <article class="card">
+          <span class="categoria">Tecnologia</span>
+          <h2>Alunos aprendem a separar conteúdo, estilo e comportamento</h2>
+          <p>HTML cuida da estrutura, CSS da aparência e JavaScript das interações.</p>
+        </article>
+        <article class="card">
+          <span class="categoria">Educação</span>
+          <h2>Responsividade permite que o mesmo site funcione no celular</h2>
+          <p>Media queries reorganizam as colunas em telas menores.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="secao-titulo">
+        <h2>Últimas notícias</h2>
+      </div>
+      <div class="lista-noticias">
+        <article class="noticia-horizontal">
+          <div class="thumb placeholder">IMAGEM</div>
+          <div>
+            <span class="categoria">Economia</span>
+            <h3><a href="economia.html">Mercado acompanha novos indicadores e empresas planejam investimentos</a></h3>
+            <p>Veja uma página temática construída com os mesmos componentes visuais.</p>
+          </div>
+        </article>
+        <article class="noticia-horizontal">
+          <div class="thumb placeholder">IMAGEM</div>
+          <div>
+            <span class="categoria">Política</span>
+            <h3><a href="politica.html">Congresso inicia semana com debates e votações em pauta</a></h3>
+            <p>A editoria de Política reutiliza o cabeçalho e os cards do projeto.</p>
+          </div>
+        </article>
+        <article class="noticia-horizontal">
+          <div class="thumb placeholder">IMAGEM</div>
+          <div>
+            <span class="categoria">Tecnologia</span>
+            <h3>JavaScript adiciona menu móvel e campo de busca ao exercício</h3>
+            <p>As interações ficam em um arquivo separado para facilitar o aprendizado.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <div class="container">
+      <strong>g1 aula</strong>
+      <p>Projeto educacional inspirado na organização visual de um portal de notícias. Conteúdo fictício.</p>
+    </div>
+  </footer>
+
+  <div class="modal-busca" id="modalBusca" aria-hidden="true">
+    <div class="caixa-busca">
+      <button id="fecharBusca" class="fechar">×</button>
+      <h2>Buscar notícias</h2>
+      <input id="campoBusca" type="search" placeholder="Digite uma palavra...">
+      <p id="resultadoBusca">Digite um termo para simular uma busca.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

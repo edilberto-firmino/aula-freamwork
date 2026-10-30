@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hub central dos manuais das aulas práticas de desenvolvimento web.">
+  <title>Manuais das Aulas Práticas</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      background: #f6f5f0;
+      color: #23332f;
+      font: 16px/1.75 system-ui, sans-serif;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 48px 24px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+      padding-bottom: 32px;
+      border-bottom: 2px solid #d8ded5;
+    }
+    .eyebrow {
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: #176451;
+      margin: 0 0 12px;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: clamp(36px, 5vw, 56px);
+      line-height: 1.1;
+      letter-spacing: -2px;
+      margin: 16px 0;
+      color: #164f40;
+    }
+    .subtitle {
+      font-size: 18px;
+      color: #4f6258;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-top: 32px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #d8ded5;
+      border-radius: 12px;
+      padding: 28px;
+      transition: transform 0.2s, box-shadow 0.2s;
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(20, 99, 78, 0.12);
+      border-color: #176451;
+    }
+    .card-number {
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      color: #176451;
+      margin-bottom: 8px;
+    }
+    .card h2 {
+      font-size: 22px;
+      margin: 8px 0 12px;
+      color: #164f40;
+      line-height: 1.3;
+    }
+    .card p {
+      font-size: 15px;
+      color: #56665f;
+      margin: 0 0 16px;
+      line-height: 1.6;
+    }
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+    .tag {
+      font-size: 12px;
+      padding: 4px 12px;
+      background: #e8eee2;
+      color: #176451;
+      border-radius: 20px;
+      font-weight: 600;
+    }
+    .instructions {
+      background: #e8eee2;
+      border-left: 4px solid #47714e;
+      padding: 20px 24px;
+      margin: 40px 0;
+      border-radius: 4px;
+    }
+    .instructions h3 {
+      margin: 0 0 12px;
+      color: #164f40;
+    }
+    .instructions p {
+      margin: 8px 0;
+      color: #4f6258;
+    }
+    .instructions code {
+      background: #d8ded5;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: ui-monospace, Consolas, monospace;
+      font-size: 0.9em;
+    }
+    footer {
+      text-align: center;
+      margin-top: 64px;
+      padding-top: 32px;
+      border-top: 1px solid #d8ded5;
+      color: #56665f;
+      font-size: 14px;
+    }
+    @media (max-width: 640px) {
+      .container {
+        padding: 32px 16px;
+      }
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <p class="eyebrow">Desenvolvimento Web</p>
+      <h1>Manuais das Aulas Práticas</h1>
+      <p class="subtitle">Documentação completa e passo a passo para cada aula prática. Selecione o manual desejado abaixo.</p>
+    </header>
+
+    <div class="instructions">
+      <h3>📝 Como adicionar uma nova aula prática</h3>
+      <p>1. Crie uma nova pasta para a aula (ex: <code>aula-pratica-nova</code>)</p>
+      <p>2. Adicione o arquivo <code>index.html</code> com o manual dentro dessa pasta</p>
+      <p>3. Adicione um novo card abaixo com link para <code>aula-pratica-nova/index.html</code></p>
+      <p>4. Atualize este arquivo e faça commit no repositório</p>
+    </div>
+
+    <div class="grid">
+      <!-- Aula Prática 4 -->
+      <a href="aula-pratica-front-banco/index.html" class="card">
+        <p class="card-number">AULA PRÁTICA 04</p>
+        <h2>Seu primeiro sistema web com SQLite</h2>
+        <p>Crie um sistema completo de cadastro de alunos com backend em Python/Flask ou Node.js, frontend em HTML/CSS/JavaScript e banco de dados SQLite.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">SQLite</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">API REST</span>
+        </div>
+      </a>
+
+      <!-- Aula Prática 5 -->
+      <a href="aula-pratica-freamwork/index.html" class="card">
+        <p class="card-number">AULA PRÁTICA 05</p>
+        <h2>React, API e SQLite</h2>
+        <p>Reconstrua o cadastro de alunos usando React com Vite. Aprenda componentes, estado (useState), efeitos (useEffect) e integração com API REST.</p>
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">Vite</span>
+          <span class="tag">Python</span>
+          <span class="tag">Flask</span>
+          <span class="tag">SQLite</span>
+        </div>
+      </a>
+
+      <!-- Adicione novas aulas aqui seguindo o padrão acima -->
+      <!-- 
+      <a href="aula-pratica-nova/index.html" class="card">
+        <p class="card-number">AULA PRÁTICA 06</p>
+        <h2>Título da Nova Aula</h2>
+        <p>Descrição breve do que será aprendido nesta aula prática.</p>
+        <div class="tags">
+          <span class="tag">Tecnologia 1</span>
+          <span class="tag">Tecnologia 2</span>
+          <span class="tag">Tecnologia 3</span>
+        </div>
+      </a>
+      -->
+    </div>
+
+    <footer>
+      <p>Desenvolvimento Web · Aulas Práticas · 2026</p>
+    </footer>
+  </div>
+</body>
+</html>

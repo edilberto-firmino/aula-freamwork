@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>G1 Aula - Economia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <div class="barra-topo container">
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <a class="logo" href="index.html">g1</a>
+      <span class="editoria">ECONOMIA</span>
+      <button class="busca-btn" id="buscaBtn">⌕</button>
+    </div>
+    <nav class="menu container" id="menu">
+      <a href="index.html">Home</a>
+      <a class="ativo" href="economia.html">Economia</a>
+      <a href="politica.html">Política</a>
+    </nav>
+  </header>
+
+  <main class="container conteudo">
+    <div class="cabecalho-editoria">
+      <h1>Economia</h1>
+      <p>Mercado, emprego, empresas, consumo e finanças.</p>
+    </div>
+
+    <section class="destaques-grid">
+      <article class="card destaque-principal">
+        <span class="categoria">Mercado</span>
+        <h1>Empresas ampliam investimentos e setor de tecnologia ganha espaço</h1>
+        <p>Conteúdo fictício criado para praticar a construção de uma editoria de notícias.</p>
+        <div class="imagem placeholder">ECONOMIA</div>
+      </article>
+      <div class="coluna-destaques">
+        <article class="card">
+          <span class="categoria">Emprego</span>
+          <h2>Novas vagas valorizam conhecimentos digitais</h2>
+          <p>Programação e análise de dados aparecem entre as habilidades mais procuradas.</p>
+        </article>
+        <article class="card">
+          <span class="categoria">Seu dinheiro</span>
+          <h2>Planejamento financeiro começa com registro de receitas e despesas</h2>
+          <p>Exemplo de notícia curta para compor a lateral da página.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="secao">
+      <div class="secao-titulo"><h2>Mais notícias de Economia</h2></div>
+      <div class="cards-3">
+        <article class="card"><div class="thumb placeholder">IMAGEM</div><span class="categoria">Negócios</span><h3>Pequenos negócios investem em presença digital</h3></article>
+        <article class="card"><div class="thumb placeholder">IMAGEM</div><span class="categoria">Mercado</span><h3>Indicadores ajudam empresas a tomar decisões</h3></article>
+        <article class="card"><div class="thumb placeholder">IMAGEM</div><span class="categoria">Carreira</span><h3>Formação técnica abre novas oportunidades profissionais</h3></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape"><div class="container"><strong>g1 aula</strong><p>Projeto educacional. Conteúdo fictício.</p></div></footer>
+  <div class="modal-busca" id="modalBusca"><div class="caixa-busca"><button id="fecharBusca" class="fechar">×</button><h2>Buscar notícias</h2><input id="campoBusca" type="search" placeholder="Digite uma palavra..."><p id="resultadoBusca">Digite um termo para simular uma busca.</p></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
